@@ -38,7 +38,7 @@ const DeleteIcon = () => (
   </svg>
 );
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://contacts-crm.onrender.com';
 
 const ContactsTable = () => {
   const [contacts, setContacts] = useState([]);
