@@ -21,7 +21,7 @@ const ContactForm = ({ fetchContacts }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/contacts', contact);
+      await axios.post('https://contacts-crm.onrender.com/contacts', contact);
       fetchContacts();
       setSnackbarOpen(true); 
       setContact({ firstName: '', lastName: '', email: '', phoneNumber: '', company: '', jobTitle: '' }); // Reset form
